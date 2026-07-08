@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CozyGlow Reader Bundle — Reserve Yours</title>
+</head>
+<body>
+
+<!-- STYLES -->
+<style>
+  .preorder-section {
+    max-width: 600px;
+    margin: 24px auto;
+    padding: 0 16px;
+    text-align: center;
+  }
+  .preorder-section .preorder-btn {
+    display: inline-block;
+    width: 100%;
+    padding: 14px 24px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+    box-sizing: border-box;
+  }
+  .preorder-section .preorder-btn:hover {
+    opacity: 0.85;
+  }
+  .preorder-section .preorder-note {
+    font-size: 13px;
+    color: #666;
+    margin-top: 8px;
+  }
+  @media screen and (min-width: 640px) {
+    .preorder-section {
+      padding: 0 24px;
+    }
+  }
+</style>
+
+<!-- MARKUP -->
+<section class="preorder-section">
+  <a href="https://get-wear-shop.fourthwall.com/pages/pre-order" class="preorder-btn" target="_blank" rel="noopener">
+    Reserve Yours — Ships in 4-5 Weeks
+  </a>
+  <p class="preorder-note">High demand — pre-order now to secure yours</p>
+</section>
+
+<!-- SCRIPT -->
+<script>
+  (function() {
+    const section = document.querySelector('.preorder-section');
+    if (!section) return;
+    const btn = section.querySelector('.preorder-btn');
+    if (btn) {
+      btn.addEventListener('click', function() {
+        if (typeof ttq !== 'undefined') {
+          ttq.track('ClickButton', { content_name: 'preorder_email_signup' });
+        }
+      });
+    }
+  })();
+</script>
+
+</body>
+</html>
