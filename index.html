@@ -9,12 +9,22 @@
 
 <!-- STYLES -->
 <style>
-  .preorder-section {
-    max-width: 600px;
-    margin: 24px auto;
-    padding: 0 16px;
-    text-align: center;
+  html, body {
+    margin: 0;
+    height: 100%;
   }
+
+  .preorder-section {
+    position: sticky;
+    bottom: 0;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 12px 16px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 -4px 12px rgba(0,0,0,0.08);
+  }
+
   .preorder-section .preorder-btn {
     display: inline-block;
     width: 100%;
@@ -30,17 +40,20 @@
     transition: opacity 0.2s ease;
     box-sizing: border-box;
   }
+
   .preorder-section .preorder-btn:hover {
     opacity: 0.85;
   }
+
   .preorder-section .preorder-note {
     font-size: 13px;
     color: #666;
     margin-top: 8px;
   }
+
   @media screen and (min-width: 640px) {
     .preorder-section {
-      padding: 0 24px;
+      padding: 16px 24px;
     }
   }
 </style>
